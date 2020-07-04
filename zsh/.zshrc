@@ -156,6 +156,7 @@ alias nocors='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\
 # Add aliases for common work commands 
 
 # Load env software
+eval $(thefuck --alias)
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
