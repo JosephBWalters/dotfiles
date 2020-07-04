@@ -13,7 +13,7 @@ export ZSH="/Users/jwalters/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
+# to know which specific one was loded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -105,47 +105,55 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Map everything vi/vim to neovim
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
+
+# General Aliases
 alias c="clear"
 alias q="exit"
 alias gs="gst"
 alias s="source"
 alias zc="v ~/.zshrc"
+alias rld="s ~/.zshrc"
 alias vc="v ~/.config/nvim/init.vim"
 alias randhex="openssl rand -hex 64"
 alias dev="cd ~/Development"
 alias dotf="cd ~/Development/dotfiles"
 alias r="ruby"
-# alias cr="crystal"
+
+# Directory Garbage <3
 alias u="cd .."
 alias uu="u && u"
+alias u2="uu"
 alias uuu="uu && u"
+alias u3="uuu"
 alias uuuu="uuu && u"
+alias u4="uuuu"
 alias uuuuu="uuuu && u"
+alias u5="uuuuu"
 alias o="open ."
-alias rld="s ~/.zshrc"
 alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
-# alias drop="cd ~/Dropbox"
 alias mkd="mkdir"
 alias ls="ls -G"
 alias l="ls -l"
 alias lc="wc -l"
-# alias be="bundle exec" # handled by zsh plugin
-alias nu="HOMEBREW_NO_AUTO_UPDATE=1"
+
+# Extra git stuff
+# Most git aliases are managed through zsh plugin
+alias gbr='git checkout $(git branch | fzf)'
+
+# Bundle aliases are loaded by zsh plugin
 
 # Work aliases
 alias nocors='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
-alias ccm="dev && cd dxc_surveyjs"
-alias vuejs="ccm && cd lib/compass_ae_vuejs"
-alias migt="ccm && RAILS_ENV=test be rake db:migrate_data && RAILS_ENV=test be rake db:migrate"
-alias migd="ccm && RAILS_ENV=development rake db:migrate_data && RAILS_ENV=development rake db:migrate"
-alias gbr='git checkout $(git branch | fzf)'
-alias wp='yarn webpack:dev'
-# alias rs='be rails s' # handled by zsh plugin
-# alias rc='be rails c' # handled by zsh plugin
+
+# Stuff I dont have here cuz they are specific to my job 
+# Add aliases for your common work folders  
+# Add aliases for common work commands 
 
 # Load env software
 eval "$(rbenv init -)"
@@ -158,3 +166,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+a
