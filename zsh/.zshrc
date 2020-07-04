@@ -107,8 +107,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Source aliases
-source ./aliases # personal/general ones
-source ./work_aliases # work ones (I did this so I can easily update .zshrc
+source ~/Development/dotfiles/zsh/aliases.sh # personal/general ones
+source ~/Development/dotfiles/zsh/work_aliases.sh # work ones (I did this so I can easily update .zshrc
 
 # alias rs='be rails s' # handled by zsh plugin
 # alias rc='be rails c' # handled by zsh plugin
