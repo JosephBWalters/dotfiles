@@ -76,7 +76,8 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git bundler nvm fzf ripgrep yarn tmux autojump git-auto-fetch taskwarrior thefuck zsh-autosuggestions)
+plugins=(rails git bundler nvm fzf ripgrep yarn tmux autojump git-auto-fetch taskwarrior thefuck )
+# add zsh-autosuggestions if reasonable - its actually more annoying to me than anything
 # can add vi-mode to above if you dare
 
 source $ZSH/oh-my-zsh.sh
