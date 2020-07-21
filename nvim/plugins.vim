@@ -37,6 +37,7 @@ Plug 'tpope/vim-surround'
 Plug 'ngmy/vim-rubocop'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mhinz/vim-startify'
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }

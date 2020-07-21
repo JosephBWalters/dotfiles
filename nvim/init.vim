@@ -72,6 +72,7 @@ source ~/Development/dotfiles/nvim/plugins/airline.vim
 source ~/Development/dotfiles/nvim/plugins/nerdtree.vim
 source ~/Development/dotfiles/nvim/plugins/grep.vim
 source ~/Development/dotfiles/nvim/plugins/ale.vim
+source ~/Development/dotfiles/nvim/plugins/startify.vim
 
 " terminal emulation
 nnoremap <silent> <leader>sh :terminal<CR>
