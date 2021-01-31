@@ -5,7 +5,7 @@ apt install -y neofetch
 apt install -y fzf
 apt install -y neovim
 apt install -y curl
-apt install -y rbenv
+# apt install -y rbenv
 apt install -y ripgrep
 apt install -y tldr
 apt install -y yarnpkg
@@ -18,6 +18,15 @@ apt install -y postgresql
 apt install -y zsh
 apt install -y fonts-firacode
 
+# Install brew
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Add brew to path
+echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/jwalters/.zprofile
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+brew install rbenv
+
 # Install Chrome Browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
@@ -26,7 +35,9 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo snap install --classic code # or code-insiders
 
 # Installs nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+brew install nvm
+mkdir ~/.nvm
 
 # Installs oh-my-zsh
 chsh -s $(which zsh) 
