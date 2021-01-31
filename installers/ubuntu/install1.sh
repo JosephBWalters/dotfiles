@@ -29,5 +29,6 @@ sudo snap install --classic code # or code-insiders
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 # Installs oh-my-zsh
+chsh -s $(which zsh) 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # after zsh loads, restart shell and run install2.sh
