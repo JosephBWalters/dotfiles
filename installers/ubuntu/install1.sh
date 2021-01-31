@@ -1,22 +1,22 @@
-# needs to be run in sudo!
-apt install build-essential
-apt install zlib1g-dev
-apt install htop
-apt install neofetch
-apt install fzf
-apt install neovim
-apt install curl
-apt install rbenv
-apt install ripgrep
-apt install tldr
-apt install yarnpkg
-apt install autojump
-apt install python3-venv
-apt install stow
-sudo apt install silversearcher-ag
-apt install thefuck
-apt install postgresql
-apt install zsh
+apt install -y build-essential
+apt install -y zlib1g-dev
+apt install -y htop
+apt install -y neofetch
+apt install -y fzf
+apt install -y neovim
+apt install -y curl
+apt install -y rbenv
+apt install -y ripgrep
+apt install -y tldr
+apt install -y yarnpkg
+apt install -y autojump
+apt install -y python3-venv
+apt install -y stow
+apt install -y silversearcher-ag
+apt install -y thefuck
+apt install -y postgresql
+apt install -y zsh
+apt install -y fonts-firacode
 
 # Install Chrome Browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -30,5 +30,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 # Installs oh-my-zsh
 chsh -s $(which zsh) 
+echo 'Please restart shell after oh-my-zsh loads, then run install2.sh'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # after zsh loads, restart shell and run install2.sh
