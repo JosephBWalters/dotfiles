@@ -8,7 +8,6 @@ apt install -y curl
 # apt install -y rbenv
 apt install -y ripgrep
 apt install -y tldr
-apt install -y yarnpkg
 apt install -y autojump
 apt install -y python3-venv
 apt install -y stow
@@ -38,6 +37,7 @@ sudo snap install --classic code # or code-insiders
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 brew install nvm
 mkdir ~/.nvm
+brew install yarn
 
 # Installs oh-my-zsh
 chsh -s $(which zsh) 
